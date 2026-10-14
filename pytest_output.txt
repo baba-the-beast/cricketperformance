@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/snehilmishra/Desktop/cricket-team-performance-agent
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collected 97 items
+
+tests/test_agents.py .....                                               [  5%]
+tests/test_confidence.py ....                                            [  9%]
+tests/test_external_matches.py ...                                       [ 12%]
+tests/test_form.py ...                                                   [ 15%]
+tests/test_matchup.py ...                                                [ 18%]
+tests/test_mcp_server.py .......                                         [ 25%]
+tests/test_mcp_stdio.py .                                                [ 26%]
+tests/test_memory.py .                                                   [ 27%]
+tests/test_parser.py ...........                                         [ 39%]
+tests/test_roles.py ....                                                 [ 43%]
+tests/test_selector.py ............                                      [ 55%]
+tests/test_simulation.py .......                                         [ 62%]
+tests/test_statistics.py ............                                    [ 75%]
+tests/test_tools.py ................                                     [ 91%]
+tests/test_webapp.py ........                                            [100%]
+
+============================== 97 passed in 1.52s ==============================

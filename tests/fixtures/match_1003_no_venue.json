@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "data_version": "1.2.0",
+    "created": "2025-01-24",
+    "revision": 1
+  },
+  "info": {
+    "balls_per_over": 6,
+    "dates": ["2025-01-19"],
+    "gender": "male",
+    "match_type": "T20",
+    "overs": 20,
+    "team_type": "club",
+    "season": "2025",
+    "teams": ["Riverside Kings", "Hillcrest Tigers"],
+    "toss": {
+      "decision": "bat",
+      "winner": "Riverside Kings"
+    },
+    "outcome": {
+      "result": "no result"
+    },
+    "players": {
+      "Riverside Kings": ["A Sharma", "B Verma"],
+      "Hillcrest Tigers": ["F Patel", "G Nair"]
+    },
+    "registry": {
+      "people": {
+        "A Sharma": "p0001",
+        "B Verma": "p0002",
+        "F Patel": "p0006",
+        "G Nair": "p0007"
+      }
+    }
+  },
+  "innings": [
+    {
+      "team": "Riverside Kings",
+      "overs": [
+        {
+          "over": 0,
+          "deliveries": [
+            {"actual_delivery": "0.1", "batter": "A Sharma", "bowler": "F Patel", "non_striker": "B Verma", "runs": {"batter": 1, "extras": 0, "total": 1}}
+          ]
+        }
+      ]
+    }
+  ]
+}

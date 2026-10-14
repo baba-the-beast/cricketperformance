@@ -1,0 +1,6 @@
+# Extra dependency for the optional demo web app only.
+# The core Phase 1 project (src/cricket_agent/) does not require Flask --
+# install this separately, only if you want to run webapp/app.py.
+Flask>=3.0,<4
+# Production WSGI server used by `python webapp/app.py` (pure Python, works on Windows).
+waitress>=3.0,<4

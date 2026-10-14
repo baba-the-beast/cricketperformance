@@ -1,0 +1,83 @@
+--- BASELINE AUDIT ---
+Python version: Python 3.14.7
+OS: macOS
+Dependencies:
+Package                   Version
+------------------------- ---------
+annotated-types           0.8.0
+anyio                     4.15.1
+attrs                     26.1.0
+blinker                   1.9.0
+certifi                   2026.7.22
+cffi                      2.1.1
+click                     8.5.0
+cryptography              50.0.1
+Flask                     3.1.3
+h11                       0.16.0
+httpcore                  1.0.9
+httpcore2                 2.13.1
+httpx                     0.28.1
+httpx-sse                 0.4.3
+httpx2                    2.13.1
+idna                      3.20
+iniconfig                 2.3.0
+itsdangerous              2.2.0
+Jinja2                    3.1.6
+jsonschema                4.26.0
+jsonschema-specifications 2025.9.1
+MarkupSafe                3.0.3
+mcp                       1.30.0
+mcp-types                 2.2.0
+opentelemetry-api         1.45.0
+packaging                 26.3
+pip                       26.2.1
+pluggy                    1.6.0
+pycparser                 3.0
+pydantic                  2.13.5
+pydantic_core             2.46.5
+pydantic-settings         2.15.0
+Pygments                  2.21.0
+PyJWT                     2.15.1
+pytest                    9.1.1
+python-dotenv             1.2.3
+python-multipart          0.0.32
+referencing               0.37.0
+rpds-py                   2026.6.3
+sse-starlette             3.5.0
+starlette                 1.7.0
+truststore                0.10.4
+typing_extensions         4.16.0
+typing-inspection         0.4.4
+uvicorn                   0.54.0
+Werkzeug                  3.1.9
+DB Path: data/processed/cricket.db
+DB Size: 39M
+Raw data: data/raw (maybe empty, but ipl data is in data/ipl/)
+Total test files:       16
+--- PYTEST RESULTS ---
+Tests Passed: 97 passed
+Tests Failed: 
+============================= test session starts ==============================
+platform darwin -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/snehilmishra/Desktop/cricket-team-performance-agent
+configfile: pyproject.toml
+plugins: anyio-4.15.1
+collected 97 items
+
+tests/test_agents.py .....                                               [  5%]
+tests/test_confidence.py ....                                            [  9%]
+tests/test_external_matches.py ...                                       [ 12%]
+tests/test_form.py ...                                                   [ 15%]
+tests/test_matchup.py ...                                                [ 18%]
+tests/test_mcp_server.py .......                                         [ 25%]
+tests/test_mcp_stdio.py .                                                [ 26%]
+tests/test_memory.py .                                                   [ 27%]
+tests/test_parser.py ...........                                         [ 39%]
+tests/test_roles.py ....                                                 [ 43%]
+tests/test_selector.py ............                                      [ 55%]
+tests/test_simulation.py .......                                         [ 62%]
+tests/test_statistics.py ............                                    [ 75%]
+tests/test_tools.py ................                                     [ 91%]
+tests/test_webapp.py ........                                            [100%]
+
+============================== 97 passed in 1.52s ==============================

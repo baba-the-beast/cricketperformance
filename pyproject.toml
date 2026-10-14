@@ -1,0 +1,12 @@
+[project]
+name = "cricket-team-performance-agent"
+version = "0.1.0"
+description = "Phase 1: deterministic Cricsheet data pipeline + MCP tool layer."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+# Lets `pytest` find the `cricket_agent` package under src/ without a
+# separate `pip install -e .` step. This is the simplest cross-platform
+# option for a college project (no build backend configuration needed).
+pythonpath = ["src"]
+testpaths = ["tests"]

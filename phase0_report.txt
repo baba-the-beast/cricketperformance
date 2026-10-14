@@ -1,0 +1,9 @@
+PHASE 0 BASELINE REPORT
+-----------------------
+- Python Version: 3.14.7
+- OS: macOS
+- Environment: 97 tests collected and run. 97 passed. 0 failed.
+- Database: data/processed/cricket.db (39MB)
+- Backup: data/processed/cricket.db.bak created.
+- Web Application: Starts successfully on port 5001. Main endpoints `/api/matches` and `/api/players` return 200 OK and valid JSON data.
+- State: Green, tests pass, endpoints active.

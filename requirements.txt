@@ -1,0 +1,28 @@
+# Cricket Team Performance Agent - Phase 1 dependencies
+#
+# Every dependency below is justified in docs/architecture.md
+# "Design Decisions". Nothing is installed "just in case".
+
+# Official MCP Python SDK. Pinned to the v1.x line (the documented stable
+# line as of this writing) rather than the newer v2.x line, for stability
+# and the largest base of examples/tutorials while we are learning it.
+# See docs/architecture.md "Why MCP SDK v1.x" for the full reasoning.
+mcp>=1.28,<2
+
+# Test runner used for every automated test in tests/.
+pytest>=8.0,<9
+
+# Note: sqlite3, json, pathlib, urllib, zipfile, logging, dataclasses,
+# and uuid are all Python standard library modules and are NOT listed
+# here, because they need no separate installation.
+Flask>=3.0.0
+hypothesis>=6.0.0
+
+# Anthropic SDK for the optional LLM step: Claude writes the coordinator's
+# explanation from the analysts' evidence (src/cricket_agent/agents/narrator.py).
+# Without ANTHROPIC_API_KEY the app runs fully and shows a rule-based summary.
+anthropic>=1.13,<2
+
+# Windows has no system time-zone database; zoneinfo needs this for
+# Asia/Kolkata fixture times (Upcoming Matches). Harmless elsewhere.
+tzdata>=2024.1

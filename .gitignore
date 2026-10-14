@@ -1,0 +1,40 @@
+# Virtual environments (one per OS; never shared)
+.venv/
+.venv-*/
+venv/
+
+# Local databases (rebuild with the ingest command)
+*.db
+*.db-wal
+*.db-shm
+
+# Test tool caches
+.hypothesis/
+
+# Built submission package (generated, large)
+submission/
+
+# Python cache/build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Generated / downloaded data (recreate via README "Dataset setup")
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Editors / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment-specific files
+.env
+
+# One-off patch scripts from development; some contain a hard-coded API key
+scratch/
